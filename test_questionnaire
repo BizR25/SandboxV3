@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Values Questionnaire</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9f9fb;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    h1, h2 {
+      color: #4f3674;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: 600;
+    }
+    input[type="text"], textarea, select {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+    }
+    .checkbox-group input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    button {
+      background-color: #4f3674;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3e2a5b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Values Questionnaire</h1>
+    <p><em>This assessment helps you reflect on the values that guide your work and life.</em></p>
+
+    <form>
+      <h2>1. Top Personal Values (Choose up to 5)</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="values" value="Achievement">Achievement</label>
+        <label><input type="checkbox" name="values" value="Balance">Balance</label>
+        <label><input type="checkbox" name="values" value="Creativity">Creativity</label>
+        <label><input type="checkbox" name="values" value="Empathy">Empathy</label>
+        <label><input type="checkbox" name="values" value="Freedom">Freedom</label>
+        <label><input type="checkbox" name="values" value="Growth">Growth</label>
+        <label><input type="checkbox" name="values" value="Honesty">Honesty</label>
+        <label><input type="checkbox" name="values" value="Integrity">Integrity</label>
+        <label><input type="checkbox" name="values" value="Learning">Learning</label>
+        <label><input type="checkbox" name="values" value="Teamwork">Teamwork</label>
+        <label><input type="checkbox" name="values" value="Trust">Trust</label>
+        <label><input type="checkbox" name="values" value="Wisdom">Wisdom</label>
+      </div>
+
+      <label>Other Values (Optional)</label>
+      <input type="text" placeholder="List any others you'd like to include...">
+
+      <h2>2. Personal Reflection</h2>
+      <label>Which one value is most central to who you are? Why?</label>
+      <textarea rows="4"></textarea>
+
+      <label>How do you see this value showing up in your work?</label>
+      <textarea rows="4"></textarea>
+
+      <label>Are there any values you wish showed up more in your workday?</label>
+      <textarea rows="4"></textarea>
+
+      <h2>3. Alignment at Work</h2>
+      <label>What kind of work makes you feel most "yourself"?</label>
+      <textarea rows="4"></textarea>
+
+      <label>What parts of work feel least aligned with your values?</label>
+      <textarea rows="4"></textarea>
+
+      <label>What kind of support helps you do your best work?</label>
+      <textarea rows="4"></textarea>
+
+      <h2>4. Sharing Preferences</h2>
+      <label>Would you be open to discussing your answers in a 1:1 check-in?</label>
+      <select>
+        <option value="">-- Please Select --</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="maybe">Maybe, depending on context</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
