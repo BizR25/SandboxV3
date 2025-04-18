@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Personal Values Questionnaire</title>
   <style>
     body {
@@ -71,7 +72,7 @@
     <h1>Personal Values Questionnaire</h1>
     <p><em>This assessment helps you reflect on the values that guide your work and life.</em></p>
 
-    <form>
+    <form onsubmit="event.preventDefault(); alert('Thank you for reflecting on your values!');">
       <h2>1. Top Personal Values (Choose up to 5)</h2>
       <div class="checkbox-group">
         <label><input type="checkbox" name="values" value="Achievement">Achievement</label>
